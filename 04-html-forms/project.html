@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form action="">
+      <!--Student first name field-->
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+
+      <!--Student last name field-->
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+
+      <!--Student email address-->
+      <label for="studemail">Email Address:</label>
+      <input type="email" name="studemail" id="studemail" /><br />
+
+      <!--Student course selection-->
+      <fieldset>
+        <legend>Courses:</legend>
+        <!--Grade 9 courses-->
+        <fieldset>
+          <legend>Grade 9:</legend>
+          <input type="checkbox" id="english 9" name="english 9" />
+          <label for="english 9">English 9</label>
+
+          <input type="checkbox" id="Algebra I" name="Algebra I" />
+          <label for="Algebra I">Algebra I</label>
+
+          <input type="checkbox" id="Geometry" name="Geometry" />
+          <label for="Geometry">Geometry</label>
+
+          <input
+            type="checkbox"
+            id="Physical science"
+            name="Physical science"
+          />
+          <label for="Physical science">Physical science</label><br />
+
+          <input type="checkbox" id="Biology" name="Biology" />
+          <label for="Biology">Biology</label>
+
+          <input type="checkbox" id="World history" name="World history" />
+          <label for="World history">World history</label>
+
+          <input type="checkbox" id="Spanish I" name="Spanish I" />
+          <label for="Spanish I">Spanish I</label>
+
+          <input type="checkbox" id="French I" name="French I" />
+          <label for="French I">French I</label>
+
+          <input
+            type="checkbox"
+            id="Art I / Drawing & Painting"
+            name="Art I / Drawing & Painting"
+          />
+          <label for="Art I / Drawing & Painting"
+            >Art I / Drawing & Painting</label
+          >
+        </fieldset>
+      </fieldset>
+      <br />
+
+      <!--Student grade selection-->
+      <label for="grade">Grade:</label>
+      <select name="grade" id="grade">
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <br /><br />
+
+      <!--Comments section-->
+      <label for="comments">Comments:</label><br />
+      <textarea name="comments" id="comments"></textarea>
+      <br />
+
+      <!--Submit button-->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
