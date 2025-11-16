@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Text and Font</title>
+
+    <style>
+      #name_hd {
+        font-variant: small-caps;
+        text-shadow: 2px 2px rgb(84, 82, 2);
+        text-align: center;
+      }
+
+      #sub_line {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      #descri_para {
+        line-height: 20px;
+        text-indent: 35px;
+      }
+      #port_link {
+        text-decoration: underline blue dashed 2px;
+      }
+
+      #art_titl {
+        font-family: "Times New Roman", Times, serif;
+        text-decoration: underline double 2px;
+      }
+
+      #art_subtitl {
+        text-align: right;
+      }
+
+      #art_para {
+        line-height: 1.6;
+      }
+
+      span {
+        vertical-align: sub;
+        font-weight: bold;
+        color: red;
+      }
+
+      body {
+        background-color: grey;
+      }
+
+      footer {
+        font-style: italic;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>PROFILE CARD TEXT</h1>
+    </header>
+    <section>
+      <h2 id="name_hd">Jordan Rivers</h2>
+      <p id="sub_line">Web Developer</p>
+      <p id="descri_para">
+        I build clean, reliable interfaces that get out of the user’s way. My
+        focus is on clarity, efficiency, and solving real problems without
+        unnecessary complexity.
+      </p>
+      <p id="port_link">Portifolio link</p>
+    </section>
+
+    <header>
+      <h1>Article Preview Block Text</h1>
+    </header>
+    <section>
+      <h2 id="art_titl">Why Minimalist Interfaces</h2>
+      <h3 id="art_subtitl">Feb 12, 2025 — UI/UX Strategy</h3>
+      <p id="art_para">
+        Most users make their first judgment in under half a second. Designers
+        who understand spacing, contrast, and hierarchy can guide attention
+        without overwhelming the viewer. When everything shouts, nothing is
+        heard.Designers rely on <span>visual cues</span> to direct attention…
+      </p>
+    </section>
+
+    <footer>
+      <p>Read More</p>
+    </footer>
+  </body>
+</html>

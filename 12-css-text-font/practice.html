@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Text and Font</title>
+
+    <style>
+      body {
+        color: blue;
+        background-color: lightgrey;
+      }
+
+      .css_text h1 {
+        background-color: black;
+        color: green;
+      }
+
+      .css_text h2 {
+        color: red;
+      }
+
+      #text_align {
+        text-align: right;
+      }
+
+      #text_align_last {
+        text-align-last: right;
+      }
+
+      #hori_align {
+        vertical-align: sub;
+      }
+
+      #deco_line {
+        text-decoration-line: underline;
+      }
+
+      #deco_line_color {
+        text-decoration-line: line-through;
+        text-decoration-color: red;
+      }
+
+      #deco_line_style {
+        text-decoration-line: overline;
+        text-decoration-style: dashed;
+      }
+
+      #deco_line_thickness {
+        text-decoration-line: line-through;
+        text-decoration-thickness: 5px;
+      }
+
+      #line_deco_shorthand-prop {
+        text-decoration: underline red double 3px;
+      }
+
+      #text_transform {
+        text-transform: uppercase;
+      }
+
+      #text_indent {
+        text-indent: 50px;
+      }
+
+      #letter_space {
+        letter-spacing: 5px;
+      }
+
+      #line_height {
+        line-height: 1.5;
+      }
+
+      #word_spacing {
+        word-spacing: 10px;
+      }
+
+      #white_space {
+        white-space: nowrap;
+      }
+
+      #text_shadow {
+        text-shadow: 2px 2px 5px red;
+      }
+
+      #new_roman_font {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      #arial_font {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #font_style {
+        font-style: italic;
+      }
+
+      #font_weight {
+        font-weight: bold;
+      }
+
+      #font_variant {
+        font-variant: small-caps;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="css_text">
+      <header>
+        <h1>CSS Text</h1>
+      </header>
+      <section>
+        <h2>CSS Text Color</h2>
+        <p>The color property is used to set the color of the text.</p>
+
+        <h2>CSS Text Background Color</h2>
+        <p>
+          You can set the background color of a text using the background-color
+          property
+        </p>
+
+        <h2>CSS Text Alignment</h2>
+        <h3>Horizontal Alignment</h3>
+        <p id="text_align">
+          The text-align property is used to set the horizontal alignment of a
+          text.
+        </p>
+        <h3>Vertical Alignment</h3>
+        <p>
+          The vertical-align property sets the
+          <span id="hori_align">vertical alignment</span> of an element.
+        </p>
+      </section>
+
+      <section>
+        <h2>CSS Text Decoration</h2>
+        <p>
+          The CSS text-decoration property is used to control the appearance of
+          decorative lines on text.
+        </p>
+        <h3>Add a Decoration Line to Text</h3>
+        <p id="deco_line">
+          The CSS text-decoration-line property sets the type of decoration line
+          added to the text.
+        </p>
+        <h3>Specify a Color for the Decoration Line</h3>
+        <p id="deco_line_color">
+          The CSS text-decoration-color property is used to set the color of the
+          decoration line.
+        </p>
+
+        <h3>Specify a Style for the Decoration Line</h3>
+        <p id="deco_line_style">
+          The CSS text-decoration-style property is used to set the style of the
+          decoration line.
+        </p>
+
+        <h3>Specify the Thickness for the Decoration Line</h3>
+        <p id="deco_line_thickness">
+          The CSS text-decoration-thickness property is used to set the
+          thickness of the decoration line.
+        </p>
+
+        <h3>The Shorthand Property</h3>
+        <p id="line_deco_shorthand-prop">
+          The CSS text-decoration property is a shorthand property for
+          text-decoration-line, text-decoration-color, text-decoration-style and
+          text-decoration-thickness
+        </p>
+      </section>
+
+      <section>
+        <h2>CSS Text Transformation</h2>
+        <p id="text_transform">
+          The CSS text-transform property is used to control the capitalization
+          of text in an element.
+        </p>
+      </section>
+
+      <section>
+        <h2>CSS Text Spacing</h2>
+        <h3>CSS Text Indentation</h3>
+        <p id="text_indent">
+          The CSS text-indent property is used to specify the indentation of the
+          first line in a text-block.
+        </p>
+
+        <h3>CSS Letter Spacing</h3>
+        <p id="letter_space">
+          The CSS letter-spacing property is used to specify the space between
+          the characters in a text.
+        </p>
+
+        <h3>CSS Line Height</h3>
+        <p id="line_height">
+          The CSS line-height property is used to specify the space between
+          lines.
+        </p>
+
+        <h3>CSS Word Spacing</h3>
+        <p id="word_spacing">
+          The CSS word-spacing property is used to specify the space between the
+          words in a text.
+        </p>
+
+        <h3>CSS White Space</h3>
+        <p id="white_space">
+          The CSS white-space property specifies how white-space inside an
+          element is handled.
+        </p>
+      </section>
+
+      <section>
+        <h2>CSS Text Shadow</h2>
+        <p id="text_shadow">The text-shadow property adds shadow to text.</p>
+      </section>
+    </div>
+
+    <div>
+      <header>
+        <h1>CSS Fonts</h1>
+      </header>
+
+      <section>
+        <h2>CSS Font-Family</h2>
+        <p id="new_roman_font">This is Times New Roman font.</p>
+        <p id="arial_font">This is Arial font.</p>
+
+        <h2>CSS Font Style</h2>
+        <p id="font_style">
+          The CSS font-style property specifies the font style for a text.
+        </p>
+
+        <h2>CSS Font weight</h2>
+        <p id="font_weight">
+          The CSS font-weight property specifies how thick or thin characters in
+          text should be displayed.
+        </p>
+
+        <h2>CSS Font Variant</h2>
+        <p id="font_variant">
+          The CSS font-variant property specifies whether or not a text should
+          be displayed in a small-caps font.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
