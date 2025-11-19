@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCS Layout Foundations</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+      }
+
+      #css_max_width {
+        max-width: 400px;
+        margin: auto;
+      }
+
+      #box_model {
+        width: 500px;
+        padding: 60px;
+        margin: 10px;
+        border: 40px solid blue;
+      }
+
+      #margins {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+
+      #margin_collapse {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      #padding {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        padding: 50px 30px 50px 80px; /* Padding shorthand */
+      }
+
+      #css_h_w {
+        height: 200px;
+        width: 400px;
+      }
+
+      #outline {
+        outline-style: dashed;
+        outline-width: 5px;
+        outline-color: red;
+        border-radius: 10px;
+        outline-offset: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>The CSS display property</h1>
+      </header>
+      <section>
+        <p>
+          The display property is an important CSS property for controlling
+          layout. It specifies whether an HTML element is treated as a block or
+          an inline element. The display property is used to change the default
+          display behavior of HTML elements.
+        </p>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div>
+      <header>
+        <h1>The CSS max-width Property</h1>
+      </header>
+      <section>
+        <p id="css_max_width">
+          The max-width property defines the maximum width of an element. This
+          property prevents the element's width from being larger than the
+          specified value (it can be smaller, but not larger). This property is
+          useful for creating responsive layouts and to ensure content
+          readability across various screen sizes.
+        </p>
+      </section>
+    </div>
+
+    <div>
+      <header>
+        <h1>The CSS Box Model</h1>
+      </header>
+      <section>
+        <p id="box_model">
+          In CSS, the term "box model" is used when talking about web design and
+          layout. The CSS box model is essentially a box that wraps around every
+          HTML element. Every box consists of four parts: content, padding,
+          borders and margins.
+        </p>
+      </section>
+    </div>
+
+    <div>
+      <header>
+        <h1>CSS margins</h1>
+      </header>
+      <section>
+        <p id="margins">
+          The CSS margin properties are used to create space around elements,
+          outside of any defined borders. Margins define the distance between an
+          element's border and the surrounding elements. With CSS, you have full
+          control over the margins. CSS has properties for setting the margin
+          for each individual side of an element (top, right, bottom, and left),
+          and a shorthand property for setting all the margin properties in one
+          declaration.
+        </p>
+
+        <h2>CSS Margin Collapse</h2>
+        <p id="margin_collapse">
+          Margin collapse is when two margins collapse into a single margin. Top
+          and bottom margins of elements are sometimes collapsed into a single
+          margin that is equal to the largest of the two margins.
+        </p>
+      </section>
+    </div>
+
+    <div>
+      <header>
+        <h1>CSS Padding</h1>
+      </header>
+
+      <section>
+        <p id="padding">
+          The CSS padding properties are used to generate space around an
+          element's content, inside of any defined borders. With CSS, you have
+          full control over the padding. There are properties for setting the
+          padding for each side of an element (top, right, bottom, and left),
+          and a shorthand property for setting all the padding properties in one
+          declaration.
+        </p>
+      </section>
+    </div>
+
+    <div>
+      <header>
+        <h1>CSS Height, Width and Max-width</h1>
+      </header>
+
+      <section>
+        <p id="css_h_w">
+          The CSS height and width properties are used to set the height and
+          width of an element. The CSS max-width property is used to set the
+          maximum width of an element.
+        </p>
+      </section>
+    </div>
+
+    <div>
+      <header>
+        <h1>CSS Outline</h1>
+      </header>
+
+      <section>
+        <p id="outline">
+          An outline is a line that is drawn around elements, OUTSIDE the
+          borders, to make the element "stand out". <br />Note: Outline differs
+          from borders! The outline is drawn outside the element's border, and
+          may overlap other content. Also, the outline is NOT a part of the
+          element's dimensions; the element's total width and height is not
+          affected by the width of the outline.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

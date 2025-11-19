@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout Foundations</title>
+
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+        text-decoration-line: underline;
+        color: #2d0f63;
+      }
+
+      body {
+        background-color: #f4e8b5;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #product_desc {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #2d0f63;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .feature_block {
+        display: inline-block;
+        width: 24%;
+        margin: 0.5%;
+        border: 2px solid #2d0f63;
+        border-radius: 12%;
+        box-sizing: border-box;
+        vertical-align: top;
+        padding: 15px;
+        background-color: #2d0f63;
+        color: #f4e8b5;
+      }
+
+      .feature-block h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Apex Smartwatch</h1>
+      <p id="product_desc">Smarter health, better performance.</p>
+    </header>
+
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature_block">
+        <h3>Speed Tracking</h3>
+        <p>Real-time performance stats designed for athletes.</p>
+      </div>
+      <div class="feature_block">
+        <h3>Battery Life</h3>
+        <p>Lasts up to 10 days on a single charge.</p>
+      </div>
+      <div class="feature_block">
+        <h3>Display Quality</h3>
+        <p>Bright AMOLED screen with crisp visibility outdoors.</p>
+      </div>
+    </div>
+  </body>
+</html>
