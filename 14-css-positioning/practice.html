@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning</title>
+
+    <style>
+      #static {
+        position: static;
+      }
+
+      #relative {
+        position: relative;
+        left: 30px;
+      }
+
+      #fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 220px;
+        background: lightblue;
+        padding: 10px;
+        border: 2px solid black;
+      }
+
+      .abs-container {
+        position: relative;
+        background: lightgray;
+        width: 300px;
+        height: 200px;
+      }
+
+      #absolute {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+
+      #sticky {
+        position: sticky;
+        top: 0;
+      }
+
+      #z-index,
+      #z-index2 {
+        position: relative;
+      }
+
+      #z-index {
+        background-color: aqua;
+        border: 5px solid black;
+        z-index: -3;
+        margin-bottom: -50px;
+      }
+
+      #z-index2 {
+        background-color: chocolate;
+        z-index: 5;
+      }
+
+      #overflow {
+        width: 50%;
+        height: 100px;
+        background-color: darkkhaki;
+        /* overflow: scroll; */
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Positioning</h1>
+      <p>
+        The position property specifies the positioning type for an element.
+      </p>
+    </header>
+
+    <section>
+      <h2>CSS Position: Static</h2>
+      <p id="static">
+        All HTML elements are positioned static by default. Static positioned
+        elements are not affected by the top, bottom, left, and right
+        properties. An element with position: static; is always positioned
+        according to the normal flow of the page
+      </p>
+    </section>
+
+    <section>
+      <h2>CSS Position: relative</h2>
+      <p id="relative">
+        An element with position: relative; is positioned relative to its normal
+        position in the document flow. Setting the top, right, bottom, and left
+        properties will cause the element to be adjusted away from its normal
+        position. Other content will not be adjusted to fit into any gap left by
+        the element.
+      </p>
+    </section>
+
+    <section>
+      <h2>CSS Position: fixed</h2>
+      <p id="fixed">
+        An element with position: fixed; is positioned relative to the viewport,
+        which means it always stays in the same place even if the page is
+        scrolled. The top, right, bottom, and left properties are used set the
+        final location of the element.
+      </p>
+    </section>
+
+    <section>
+      <h2>CSS Position: absolute</h2>
+      <div class="abs-container">
+        <p id="absolute">
+          An element with position: absolute; is positioned relative to the
+          nearest positioned ancestor (with position other than static).
+          However; if an absolute positioned element has no positioned
+          ancestors, it uses the document body, and moves along with page
+          scrolling.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="sticky">CSS Position: sticky</h2>
+      <p>
+        An element with position: sticky; toggles between a relative and fixed
+        position, depending on the scroll position. A sticky element is
+        positioned relative until a certain scroll position is reached - then it
+        "sticks" in that place (like position:fixed).
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+        dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus
+        eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
+        sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+        hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
+        vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit
+        amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
+        sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+        bibendum sodales, augue velit cursus nunc, quis gravida magna mi a
+        libero. Fusce vulputate eleifend sapien. Vestibulum purus quam,
+        scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in
+        dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante
+        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis
+        arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed
+        aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer
+        eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper
+        ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium
+        libero. Cras id dui. Aenean ut
+      </p>
+    </section>
+
+    <header>
+      <h1>CSS The z-index Property</h1>
+    </header>
+
+    <section>
+      <p id="z-index">
+        The z-index property specifies the stack order of positioned elements.
+        The stack order defines which element should be placed in front or
+        behind other elements. When elements are positioned, they can overlap
+        other elements. An element can have a positive or negative stack order
+        (z-index) <br /><em style="font-weight: bold">Note:</em> z-index only
+        works on positioned elements (position: absolute, position: relative,
+        position: fixed, or position: sticky) and flex items (elements that are
+        direct children of display: flex elements).
+      </p>
+      <p id="z-index2">Some other text</p>
+    </section>
+
+    <header>
+      <h1>CSS The overflow Property</h1>
+    </header>
+
+    <p>
+      The CSS overflow property controls what happens to content that is too big
+      to fit into an area. It specifies whether to clip the content or to add
+      scrollbars when the content of an element is too big.
+    </p>
+    <div id="overflow">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+      dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+      nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+      enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+      felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+      elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+      ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+      ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
+      ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+      nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+      rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+      libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+      vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+      tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
+      quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+      fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
+      consequat, leo eget bibendum sodales, augue velit cursus nunc,
+    </div>
+  </body>
+</html>
